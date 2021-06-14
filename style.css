@@ -1,0 +1,36 @@
+/* General */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2c2c37;
+  color: aliceblue;
+}
+
+/* toggle-sidebar */
+.toggle-sidebar {
+  display: none;
+}
+
+/* Nav-left */
+.nav-left {
+  width: 250px;
+  min-height: 900px;
+  background-color: #424253;
+  padding: 10px;
+}
+
+/* Intro */
+
+/* Sections- Projects */
+.projects-wrap {
+}
+.projects-item {
+  width: 300px;
+  height: 200px;
+  background-color: #2222d6;
+  margin: 10px;
+  padding: 15px;
+}
