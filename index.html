@@ -14,45 +14,79 @@
       src="https://kit.fontawesome.com/4e292ec4a8.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/styles/progressive-circle.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
     <title>My Portfolio</title>
   </head>
   <body>
     <main class="d-flex col container mt-3">
       <header class="toggle-sidebar"><span>Toggle sidebar</span></header>
-      <nav class="nav-left">
+      <nav class="nav-left ">
         <div class="sidebar-left">
-          <div class="profile-wrap">
+          <div class="profile-wrap profile-card">
             <div class="profile-photo">
-              <img src="" class="img-fluid" alt="" />
+              <img src="/assets/foto-kolpaja.JPG" class="img-fluid" alt="Sokol Paja profile photo" />
               <h5>Sokol Paja</h5>
               <div class="job">Web Developer</div>
             </div>
           </div>
-          <div class="profile-details">
+          <div class="profile-details profile-card">
             <h6>Residence:</h6>
             <h6>City</h6>
             <h6>Age</h6>
           </div>
-          <div class="art-lang-skills">
-            <div class="art-lang-skill-item">Albanian</div>
-            <div class="art-lang-skill-item">English</div>
-            <div class="art-lang-skill-item">Italian</div>
-            <div class="art-lang-skill-item">Turkish</div>
+          <div class="art-lang-skills profile-card">
+            <div class="albanian">
+              <div class="progress blue">
+                <span class="progress-left">
+                    <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                    <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">90%</div>
+            </div>
+              <div class="art-lang-skill-item">English</div>
+            </div>
+            <div class="albanian">
+              <div class="progress green">
+                <span class="progress-left">
+                    <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                    <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">75%</div>
+            </div>
+              <div class="art-lang-skill-item">Turkish</div>
+            </div>
+            <div class="albanian">
+              <div class="progress pink">
+                <span class="progress-left">
+                    <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                    <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">60%</div>
+            </div>
+              <div class="art-lang-skill-item">Italian</div>
+            </div>
+           
           </div>
-          <div class="art-hard-skills">
+          <div class="art-hard-skills profile-card">
             <div class="art-hard-skills-item">Html5</div>
             <div class="art-hard-skills-item">Css3</div>
             <div class="art-hard-skills-item">JS</div>
             <div class="art-hard-skills-item">React</div>
           </div>
-          <ul class="art-knowledge-skills">
+          <ul class="art-knowledge-skills profile-card">
             <li><i class="fas fa-check"></i> Bootstrap, Sass</li>
             <li><i class="fas fa-check"></i> MongoDB, Firebase</li>
             <li><i class="fas fa-check"></i> Nodejs, Express</li>
             <li><i class="fas fa-check"></i> Git, github</li>
           </ul>
-          <a href="" class="link-cv"
+          <a href="" class="link-cv "
             >Download cv <i class="fas fa-download"></i
           ></a>
         </div>
@@ -64,23 +98,111 @@
             <h1>I'm Koli</h1>
             <h1>web developer</h1>
             <span>Front-End Developer</span>
-            <a class="btn btn-success" href="#contact">Connect!</a>
+            <a class="btn-sm btn-success text-decoration-none" href="#contact">Connect!</a>
           </div>
         </section>
-        <section></section>
+
         <div class="container-fluid">
           <div class="projects row">
             <div class="col-lg-12">
               <div class="projects-title">My Projects</div>
             </div>
             <div class="projects-wrap row">
-              <div class="projects-item col-lg-4"></div>
-              <div class="projects-item col-lg-4"></div>
-              <div class="projects-item col-lg-4"></div>
+              <div id="yelpCamp" class="projects-item col-lg-4">
+                <div class="card" >
+                  <img
+                    src="/assets/yelp-camp.png"
+                    class="card-img-top"
+                    alt="Campgrounds"
+                  />
+                  <div class="text-dark mt-1">
+                    <h5 class="title">Yelp Camp</h5>
+                    <p class="card-text">
+                      Yelpcamp is a campground rating app, where users can
+                      create their own campgrounds, view and comment on others'
+                      campgrounds.
+                    </p>
+                    <a
+                      href="https://yelp-camp-bykolpaja.herokuapp.com/"
+                      class="btn btn-primary"
+                      >Visit Project</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div id="sarahsClothing" class="projects-item col-lg-4">
+                <div class="card" >
+                  <img
+                    src="/assets/sarah-clothing-1.png"
+                    class="card-img-top"
+                    alt="Campgrounds"
+                  />
+                  <div class=" text-dark mt-1">
+                    <h5 class="title">Sarah's Clothing</h5>
+                    <p class="card-text">
+                      E-Commerce store, you can login and navigate through collections. Adding items to shopping cart and then pay with your credit card.
+                    </p>
+                    <a
+                      href="https://yelp-camp-bykolpaja.herokuapp.com/"
+                      class="btn btn-primary"
+                      >Visit Project</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div id="todoApp" class="projects-item col-lg-4">
+                <div class="card" >
+                  <img
+                    src="/assets/todo-app.png"
+                    class="card-img-top"
+                    alt="Campgrounds"
+                  />
+                  <div class=" text-dark mt-1">
+                    <h5 class="title">To Do List App</h5>
+                    <p class="card-text">
+                      Simple todos app. Where you can add new to do lists and  you can edit/delet or marked as done
+                    </p>
+                    <a
+                      href="https://kolpaja.github.io/to-do-app/"
+                      class="btn btn-primary"
+                      >Visit Project</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div id="matchingGame" class="projects-item col-lg-4">
+                <div class="card" >
+                  <img
+                    src="/assets/matching-game.png"
+                    class="card-img-top"
+                    alt="Campgrounds"
+                  />
+                  <div class=" text-dark mt-1">
+                    <h5 class="title">Matching Game</h5>
+                    <p class="card-text">
+                      There is always free time to play games 😃
+                      Match pairs of same animal, Good Luck!
+                    </p>
+                    <a
+                      href="https://kolpaja.github.io/matching-game/"
+                      class="btn btn-primary"
+                      >Visit Project</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              
+            </div>
+          </div>
             </div>
           </div>
         </div>
       </div>
+      
     </main>
 
     <script
