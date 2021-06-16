@@ -11,6 +11,12 @@ body {
   color: aliceblue;
 }
 
+.main-container {
+  display: flex;
+  flex-direction: row;
+  margin: 60px;
+}
+
 /* toggle-sidebar */
 .toggle-sidebar {
   display: none;
@@ -36,6 +42,20 @@ body {
 }
 
 /* profile photo */
+.profile-details{
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-details div {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.profile-details div h6:nth-of-type(2n) {
+  color: #1b1b1d;
+}
 .profile-card {
   border-bottom: solid 2px #c47011;
   padding: 10px;
@@ -62,6 +82,52 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
 }
+
+/* social networks */
+.social-media{
+  font-size: 1.5rem;
+}
+
+.social-media a:hover{
+  transform: scale(1.1);
+}
+
+.social-media a:active{
+  transform:translateY(3px) ;
+}
+.fa-github{
+  color: white;
+}
+
+.linkedin{
+  background-color: rgb(153, 33, 33);
+}
+.fa-linkedin{
+  color: rgb(47, 99, 241);
+  text-decoration-color: white;
+}
+
+.fa-instagram{
+  color: rgb(238, 109, 131);
+}
+.resume-link{
+  text-decoration: none;
+  font-size: 16px;
+  margin:30px 0px ;
+  color :#afa6a6;
+  text-align: center;
+}
+
+.resume-link a{
+  text-decoration: none;
+}
+
+.resume-link a:hover{
+  color: blue;
+ 
+  border-bottom: 1px solid #2250e7;
+}
+
 /* Intro */
 
 /* Sections- Projects */
