@@ -130,6 +130,7 @@ body {
 
 /* Intro */
 
+
 /* Sections- Projects */
 .projects-title {
   text-align: center;
@@ -240,6 +241,41 @@ body {
 }
 .progress.green .progress-left .progress-bar {
   animation: loading-3 1.2s linear forwards 1.8s;
+}
+
+/* main section */
+
+@media screen and (max-width: 768px) {
+  .main{
+    padding: 0;
+    text-align: center;
+  }
+  .container{
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container{
+    flex-direction: column;
+  }
+  .nav-left{
+    width: 100%;
+  }
+  .projects-item{
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .row{
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+  }
+
+  .projects-title{
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 700;
+  }
 }
 @keyframes loading-1 {
   0% {
